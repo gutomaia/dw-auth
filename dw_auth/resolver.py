@@ -1,18 +1,15 @@
 from typing import Any
 
 import inject
+from dw_core.resolver import ResolutionContext
 
 from dw_auth.domain import AuthenticatedPrincipal, Principal
 from dw_auth.ports import Authenticator
-from dw_core.resolver import ResolutionContext
 
 
 class PrincipalArgumentResolver:
     def supports(self, arg_type: Any) -> bool:
-        return (
-            isinstance(arg_type, type)
-            and issubclass(arg_type, Principal)
-        )
+        return isinstance(arg_type, type) and issubclass(arg_type, Principal)
 
     def resolve(
         self,
