@@ -443,7 +443,7 @@ optional = false
 python-versions = "^3.12"
 groups = ["main"]
 files = []
-develop = false
+develop = true
 
 [package.dependencies]
 pydantic = "^2.11.4"
@@ -1637,4 +1637,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "3c8bb68c93ec61a28bbbbd8ae3960bdb5ba0d63dff445de26fbc251ff3a77cb1"
+content-hash = "17756aca7fbe520ac9a5de28fc612398712a8ddc0a69f773dda02d46bb80ed2a"

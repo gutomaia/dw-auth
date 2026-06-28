@@ -6,7 +6,7 @@ authors = ["Guto Maia <guto@guto.net>"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
-dw-core = {path = "../dw-core"}
+dw-core = {path = "../dw-core", develop = true}
 
 [tool.poetry.group.dev.dependencies]
 bandit = "^1.8.3"
